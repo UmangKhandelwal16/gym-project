@@ -1,0 +1,101 @@
+.Scroller{
+    position: relative;
+    overflow: hidden; 
+    padding: 20px;
+    background-color: black;
+    border: 5px solid orange;
+
+}
+
+
+.Product-container{
+    padding: 0 10px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    display:flex
+}
+.header2{
+    color: aliceblue;
+   /* border: 1px solid white;
+    width: 500px; */
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pre-btn, .next-btn {
+    border: none;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(14, 2, 2, 0.973);
+}
+.next-btn{
+    right: 0;
+}
+.pre-btn p, .next-btn p{
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 10px;
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.product-cards{
+    min-width: 300px;
+    max-width: 300px;
+    height: 350px;
+    margin : 10px;
+    background-color: black;
+    color: aliceblue;
+    padding : -50px
+}
+.product-images, .products{
+min-width: 300px;
+max-width: 300px;
+height: 300px;
+display: flex;
+}
+.caption{
+    border: 1px solid black;
+    color: rgb(255, 250, 250);
+    position: sticky;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+{/*
+    
+const prvsbtn = () => {
+          const width = box.current.clientWidth;
+          box.current.scrollLeft -= width;
+        };
+      
+        const nextbtn = () => {
+          const width = box.current.clientWidth;
+          box.current.scrollLeft += width;
+        };
+
+
+
+     <button className="pre-btn" onClick={prvsbtn}>
+                <p> &lt; </p>
+              </button>
+              <button className="next-btn" onClick={nextbtn}>
+                <p> &gt; </p>
+              </button>
+
+
+    */}
